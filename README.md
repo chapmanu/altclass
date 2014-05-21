@@ -32,7 +32,7 @@ Or 960px and beyond:
 
 [altclass.js](altclass.js) places a completely hidden iframe with no layout inside an element to detect its changes. When the element’s width matches a new altclass breakpoint, its classnames are refreshed.
 
-The iframe has no height, so elements with dynamic content won’t fire unnecessary measurements or calculations. Similarly, if the window resizes and does not change the width of the container, no measurements or calculations are made.
+The iframe has no height, so elements with dynamic content that change their height will not trigger unnecessary measurements or calculations. Similarly, window resizes that do not change the width of the element will not trigger unnecessary measurements or calculations.
 
 ## Syntax
 
